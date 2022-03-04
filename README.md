@@ -1,9 +1,5 @@
 # Getting Started with Create React App
 
-```shell
-npx create-react-app@5.0.0 . --template typescript
-```
-
 ## Available Scripts
 
 In the project directory, you can run:
