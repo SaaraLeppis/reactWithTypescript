@@ -1,9 +1,21 @@
 import React from 'react';
-import './App.css';
+import TodoList from './components/TodoList'; 
+import NewTodo from './components/NewTodo';
 
-function App() {
+const App: React.FC=()=> {
+ 
+  const todos =[{id: 't1', text: 'walk 10 km'}]; 
+
+  const todoAddHandler = (text:String )=>{
+    console.log(text );
+    
+    
+  }
+ 
   return (
     <div className="App">
+      <NewTodo onAddTodo ={todoAddHandler}/>
+      <TodoList  items={todos}/>
       
     </div>
   );
